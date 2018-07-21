@@ -12,7 +12,7 @@ public class ConfigDriver  {
 	public WebDriver driver =null;
 	public WebDriver getSetDriver() {
 		String workingDir = System.getProperty("user.dir");
-		System.setProperty("webdriver.chrome.driver",workingDir+File.separator+"src"+File.separator+"test"+File.separator+"resources"+File.separator+"BrowserDrivers"+File.separator+"chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver",workingDir+File.separator+"src"+File.separator+"test"+File.separator+"resources"+File.separator+"BrowserDrivers"+File.separator+"chromedriver");
 		ChromeOptions opt= new ChromeOptions();
 //		opt.addArguments("--start-maximized");
 		opt.addArguments("--headless");
