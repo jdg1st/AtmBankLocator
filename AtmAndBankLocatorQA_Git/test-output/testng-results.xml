@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="7088" started-at="2018-07-21T07:55:31Z" finished-at="2018-07-21T07:55:38Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="7088" started-at="2018-07-21T07:55:31Z" finished-at="2018-07-21T07:55:38Z">
+      <class name="com.cts.testcase.AtmBankSearch">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.cts.testcase.AtmBankSearch@c038203]" name="beforeTest" is-config="true" duration-ms="6210" started-at="2018-07-21T13:25:25Z" finished-at="2018-07-21T13:25:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="launchWebsite()[pri:1, instance:com.cts.testcase.AtmBankSearch@c038203]" name="launchWebsite" duration-ms="91" started-at="2018-07-21T13:25:31Z" finished-at="2018-07-21T13:25:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchWebsite -->
+        <test-method status="PASS" signature="login()[pri:2, instance:com.cts.testcase.AtmBankSearch@c038203]" name="login" duration-ms="924" started-at="2018-07-21T13:25:31Z" finished-at="2018-07-21T13:25:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="locateAtm()[pri:3, instance:com.cts.testcase.AtmBankSearch@c038203]" name="locateAtm" duration-ms="2506" started-at="2018-07-21T13:25:32Z" finished-at="2018-07-21T13:25:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- locateAtm -->
+        <test-method status="PASS" signature="logout()[pri:4, instance:com.cts.testcase.AtmBankSearch@c038203]" name="logout" duration-ms="3539" started-at="2018-07-21T13:25:34Z" finished-at="2018-07-21T13:25:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.cts.testcase.AtmBankSearch@c038203]" name="afterMethod" is-config="true" duration-ms="570" started-at="2018-07-21T13:25:38Z" finished-at="2018-07-21T13:25:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.cts.testcase.AtmBankSearch -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
