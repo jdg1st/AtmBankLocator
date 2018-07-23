@@ -21,7 +21,7 @@ public class DriverScript extends ConfigDriver{
 	@BeforeSuite
 	public void beforeTest() {		
 		driver=getSetDriver();
-		driver.get("http://18.221.101.141:8080/AtmAndBranchLocator.war/");		
+		driver.get("http://18.188.250.212:8080/AtmAndBranchLocator.war/");		
 		
 	}
 	
