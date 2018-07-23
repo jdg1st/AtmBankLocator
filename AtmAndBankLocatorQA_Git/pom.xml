@@ -6,12 +6,12 @@
   <name>AtmAndBankLocatorQA_Git</name>
   <description>AtmAndBankLocatorQA_Git</description>
   
-   <profiles>
+      <profiles>
 	    <profile>
 	    	<id>AtmAndBankLocator</id>
 	    	<build>
 	    		<plugins>
-			      <plugin>
+			      <!-- <plugin>
 			      	<groupId>org.apache.maven.plugins</groupId>
 			        <artifactId>maven-compiler-plugin</artifactId>
 			        <version>3.6.1</version>
@@ -19,7 +19,27 @@
 			          <source>1.8</source>
 			          <target>1.8</target>
 			        </configuration>
-			      </plugin>
+			      </plugin> -->
+			      <plugin>
+	                <groupId>org.apache.maven.plugins</groupId>
+	                <artifactId>maven-shade-plugin</artifactId>
+	                <version>2.4.3</version>
+	                <executions>
+	                    <execution>
+	                        <phase>package</phase>
+	                        <goals>
+	                            <goal>shade</goal>
+	                        </goals>
+	                        <configuration>
+	                            <artifactSet>
+	                                <includes>
+	                                    <include>org.json:json</include>
+	                                </includes>
+	                            </artifactSet>
+	                        </configuration>
+	                    </execution>
+	                </executions>
+            	</plugin>
 			      <plugin>
 			      	<groupId>org.apache.maven.plugins</groupId>
 			        <artifactId>maven-surefire-plugin</artifactId>
