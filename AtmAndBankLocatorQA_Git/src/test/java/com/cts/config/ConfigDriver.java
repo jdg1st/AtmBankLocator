@@ -16,11 +16,11 @@ public class ConfigDriver  {
 		//System.setProperty("webdriver.chrome.driver","//usr//lib//chromium-browser//chromedriver");
 		//System.setProperty("webdriver.chrome.driver","//usr//bin//chromedriver");
 		System.setProperty("webdriver.chrome.driver","//home//ubuntu//chromedriver");
-		ChromeOptions opt= new ChromeOptions();
+		//ChromeOptions opt= new ChromeOptions();
 //		opt.addArguments("--start-maximized");
-		opt.addArguments("--headless");
-		driver = new ChromeDriver(opt);
-		//driver = new ChromeDriver();
+		//opt.addArguments("--headless");
+		//driver = new ChromeDriver(opt);
+		driver = new ChromeDriver();
 		return driver;
 	}
 
