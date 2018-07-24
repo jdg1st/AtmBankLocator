@@ -22,7 +22,7 @@ public class ConfigDriver  {
 		
 		
 		DesiredCapabilities desiredCap = DesiredCapabilities.chrome();
-		desiredCap.setCapability("headless", true);
+		desiredCap.setCapability("--headless", true);
 
         final URL url = new URL("http://18.188.250.212:8080/AtmAndBranchLocator.war/");
         driver = new RemoteWebDriver(url, desiredCap);
