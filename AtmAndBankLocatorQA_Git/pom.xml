@@ -47,7 +47,7 @@
 			        <inherited>true</inherited>
 			        <configuration>
 			          <suiteXmlFiles>
-			          	<suiteXmlFile>testng.xml</suiteXmlFile>
+			          	<suiteXmlFile>AtmBankLocator/AtmAndBankLocatorQA_Git/testng.xml</suiteXmlFile>
 			          </suiteXmlFiles>
 			        </configuration>
 			      </plugin>
