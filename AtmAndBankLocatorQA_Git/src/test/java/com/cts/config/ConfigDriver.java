@@ -14,7 +14,8 @@ public class ConfigDriver  {
 		String workingDir = System.getProperty("user.dir");
 		//System.setProperty("webdriver.chrome.driver",workingDir+File.separator+"src"+File.separator+"test"+File.separator+"resources"+File.separator+"BrowserDrivers"+File.separator+"chromedriver");
 		//System.setProperty("webdriver.chrome.driver","//usr//lib//chromium-browser//chromedriver");
-		System.setProperty("webdriver.chrome.driver","//usr//bin//chromedriver");
+		//System.setProperty("webdriver.chrome.driver","//usr//bin//chromedriver");
+		System.setProperty("webdriver.chrome.driver","//home//ubuntu//chromedriver");
 		ChromeOptions opt= new ChromeOptions();
 //		opt.addArguments("--start-maximized");
 		opt.addArguments("--headless");
