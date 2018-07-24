@@ -1,5 +1,7 @@
 package com.cts.testcase;
 
+import java.net.MalformedURLException;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -19,7 +21,7 @@ public class DriverScript extends ConfigDriver{
 //	public static void main(String[] args) {
 	
 	@BeforeSuite
-	public void beforeTest() {		
+	public void beforeTest() throws MalformedURLException {		
 		driver=getSetDriver();
 		driver.get("http://18.188.250.212:8080/AtmAndBranchLocator.war/");		
 		
