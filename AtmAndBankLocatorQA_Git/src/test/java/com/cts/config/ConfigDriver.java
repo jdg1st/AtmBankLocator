@@ -1,10 +1,14 @@
 package com.cts.config;
 
 import java.io.File;
+import java.net.MalformedURLException;
+import java.net.URL;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 
 public class ConfigDriver  {
@@ -20,8 +24,8 @@ public class ConfigDriver  {
 		DesiredCapabilities desiredCap = DesiredCapabilities.chrome();
 		desiredCap.setCapability("headless", true);
 
-       		 final URL url = new URL("http://18.221.101.141:8080/AtmAndBranchLocator.war/");
-        	driver = new RemoteWebDriver(url, desiredCap);
+        final URL url = new URL("http://18.221.101.141:8080/AtmAndBranchLocator.war/");
+        driver = new RemoteWebDriver(url, desiredCap);
 
 		
 //		opt.addArguments("--start-maximized");
