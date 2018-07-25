@@ -19,7 +19,7 @@ public class ConfigDriver  {
 		String workingDir = System.getProperty("user.dir");
 //		System.setProperty("webdriver.chrome.driver",workingDir+File.separator+"src"+File.separator+"test"+File.separator+"resources"+File.separator+"BrowserDrivers"+File.separator+"chromedriver.exe");
 		System.setProperty("webdriver.chrome.driver","//home//ubuntu//chromedriver");
-		//ChromeOptions opt= new ChromeOptions();
+		ChromeOptions opt= new ChromeOptions();
 		
 		
 		//DesiredCapabilities desiredCap = DesiredCapabilities.chrome();
@@ -28,15 +28,14 @@ public class ConfigDriver  {
         //final URL url = new URL("http://18.188.250.212:8080/AtmAndBranchLocator.war/");
         //driver = new RemoteWebDriver(url, desiredCap);
 
-		
-//		opt.addArguments("--start-maximized");
+		opt.addArguments("port=4444");
 		//opt.addArguments("--headless");
 //		DesiredCapabilities desired = new DesiredCapabilities();		
 //		desired.setCapability(ChromeOptions.CAPABILITY, opt);
 
-		//driver = new ChromeDriver(opt);
+		driver = new ChromeDriver(opt);
 		//driver = new RemoteWebDriver(desired);
-		driver = new ChromeDriver();
+		//driver = new ChromeDriver();
 
 		return driver;
 	}
