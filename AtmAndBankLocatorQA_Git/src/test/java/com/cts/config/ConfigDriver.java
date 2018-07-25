@@ -10,6 +10,7 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
+import org.openqa.selenium.phantomjs.PhantomJSDriverService;
 
 public class ConfigDriver  {
 	
@@ -38,11 +39,11 @@ public class ConfigDriver  {
 // 		driver = new FirefoxDriver(fo);
 
 		System.setProperty("phantomjs.binary.path", "/usr/local/bin/phantomjs");
-		//DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
-		//desiredCapabilities.setJavascriptEnabled(true);
-		//String [] phantomJsArgs = {"--ignore-ssl-errors=yes"};
-		//desiredCapabilities.setCapability(PhantomJSDriverService.PHANTOMJS_CLI_ARGS, phantomJsArgs);
-		driver = new PhantomJSDriver();
+		DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
+		desiredCapabilities.setJavascriptEnabled(true);
+		String [] phantomJsArgs = {"--ignore-ssl-errors=yes"};
+		desiredCapabilities.setCapability(PhantomJSDriverService.PHANTOMJS_CLI_ARGS, phantomJsArgs);
+		driver = new PhantomJSDriver(desiredCapabilities);
 		
 		return driver;
 	}
