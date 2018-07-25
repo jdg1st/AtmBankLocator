@@ -9,7 +9,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
-
+import org.openqa.selenium.phantomjs.PhantomJSDriver;
 
 public class ConfigDriver  {
 	
@@ -32,12 +32,17 @@ public class ConfigDriver  {
 		//driver = new RemoteWebDriver(desired);
 		//driver = new ChromeDriver();
 
-		System.setProperty("webdriver.gecko.driver", "/home/ubuntu/geckodriver");
-		FirefoxOptions fo = new FirefoxOptions();
-		fo.addArguments("--headless");
-		
-		driver = new FirefoxDriver(fo);
-		
+// 		System.setProperty("webdriver.gecko.driver", "/home/ubuntu/geckodriver");
+// 		FirefoxOptions fo = new FirefoxOptions();
+// 		fo.addArguments("--headless");
+// 		driver = new FirefoxDriver(fo);
+
+		System.setProperty("phantomjs.binary.path", "/usr/local/bin/phantomjs");
+		//DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
+		//desiredCapabilities.setJavascriptEnabled(true);
+		//String [] phantomJsArgs = {"--ignore-ssl-errors=yes"};
+		//desiredCapabilities.setCapability(PhantomJSDriverService.PHANTOMJS_CLI_ARGS, phantomJsArgs);
+		driver = new PhantomJSDriver();
 		
 		return driver;
 	}
