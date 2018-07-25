@@ -21,19 +21,19 @@ public class ConfigDriver  {
 		ChromeOptions opt= new ChromeOptions();
 		
 		
-		DesiredCapabilities desiredCap = DesiredCapabilities.chrome();
-		desiredCap.setCapability("--headless", true);
+		//DesiredCapabilities desiredCap = DesiredCapabilities.chrome();
+		//desiredCap.setCapability("--headless", true);
 
-        final URL url = new URL("http://18.188.250.212:8080/AtmAndBranchLocator.war/");
-        driver = new RemoteWebDriver(url, desiredCap);
+        //final URL url = new URL("http://18.188.250.212:8080/AtmAndBranchLocator.war/");
+        //driver = new RemoteWebDriver(url, desiredCap);
 
 		
-//		opt.addArguments("--start-maximized");
+		opt.addArguments("--start-maximized");
 //		opt.addArguments("--headless");
 //		DesiredCapabilities desired = new DesiredCapabilities();		
 //		desired.setCapability(ChromeOptions.CAPABILITY, opt);
 
-//		driver = new ChromeDriver(opt);
+		driver = new ChromeDriver(opt);
 //		driver = new RemoteWebDriver(desired);
 		return driver;
 	}
