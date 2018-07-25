@@ -23,7 +23,7 @@ public class DriverScript extends ConfigDriver{
 	@BeforeSuite
 	public void beforeTest() throws MalformedURLException {		
 		driver=getSetDriver();
-		driver.get("http://18.222.169.123:8080/AtmAndBranchLocator.war/");		
+		driver.get("http://localhost:8080/AtmAndBranchLocator.war/");	
 		
 	}
 	
