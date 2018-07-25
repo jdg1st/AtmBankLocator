@@ -32,7 +32,7 @@ public class ConfigDriver  {
 		//driver = new RemoteWebDriver(desired);
 		//driver = new ChromeDriver();
 
-		System.setProperty("webdriver.gecko.driver", "/home/ubuntu/geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver", "/home/ubuntu/geckodriver");
 		FirefoxOptions fo = new FirefoxOptions();
 		fo.addArguments("--headless");
 		
