@@ -39,10 +39,10 @@ public class ConfigDriver  {
 // 		fo.addArguments("--headless");
 // 		driver = new FirefoxDriver(fo);
 
-// 		System.setProperty("phantomjs.binary.path", "/usr/local/bin/phantomjs");
+		System.setProperty("phantomjs.binary.path", "/usr/local/bin/phantomjs");
 // 		System.setProperty("phantomjs.binary.path", "/usr/local/share/phantomjs-2.1.1-linux-x86_64/bin/phantomjs");
-		File path=new File("/usr/local/bin/phantomjs");
-		System.setProperty("phantomjs.binary.path", path.getAbsolutePath());
+// 		File path=new File("/usr/local/bin/phantomjs");
+// 		System.setProperty("phantomjs.binary.path", path.getAbsolutePath());
 		DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
 		desiredCapabilities.setJavascriptEnabled(true);
 		String [] phantomJsArgs = {"--ignore-ssl-errors=yes"};
