@@ -15,7 +15,7 @@ public class ConfigDriver  {
 	
 	public WebDriver driver =null;
 	@SuppressWarnings("deprecation")
-	public WebDriver getSetDriver() throws MalformedURLException {
+	public WebDriver getSetDriver() {
 		String workingDir = System.getProperty("user.dir");
 //		System.setProperty("webdriver.chrome.driver",workingDir+File.separator+"src"+File.separator+"test"+File.separator+"resources"+File.separator+"BrowserDrivers"+File.separator+"chromedriver.exe");
 		//System.setProperty("webdriver.chrome.driver","/home/ubuntu/chromedriver");		
