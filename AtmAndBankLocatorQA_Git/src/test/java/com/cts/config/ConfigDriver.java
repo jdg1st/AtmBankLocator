@@ -3,15 +3,15 @@ package com.cts.config;
 import java.io.File;
 
 import org.openqa.selenium.WebDriver;
-// import org.openqa.selenium.chrome.ChromeDriver;
-// import org.openqa.selenium.chrome.ChromeOptions;
-// import org.openqa.selenium.firefox.FirefoxDriver;
-// import org.openqa.selenium.firefox.FirefoxOptions;
-// import org.openqa.selenium.htmlunit.HtmlUnitDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
-// import org.openqa.selenium.phantomjs.PhantomJSDriverService;
-// import org.openqa.selenium.remote.DesiredCapabilities;
-// import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.phantomjs.PhantomJSDriverService;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class ConfigDriver  {
 	
@@ -39,15 +39,22 @@ public class ConfigDriver  {
 // 		fo.addArguments("--headless");
 // 		driver = new FirefoxDriver(fo);
 
-		System.setProperty("phantomjs.binary.path", "/usr/local/bin/phantomjs");
-// 		System.setProperty("phantomjs.binary.path", "/usr/local/share/phantomjs-2.1.1-linux-x86_64/bin/phantomjs");
-// 		File path=new File("/usr/local/bin/phantomjs");
+// 		System.setProperty("phantomjs.binary.path", "/usr/local/bin/phantomjs");
+// // 		System.setProperty("phantomjs.binary.path", "/usr/local/share/phantomjs-2.1.1-linux-x86_64/bin/phantomjs");
+// // 		File path=new File("/usr/local/bin/phantomjs");
 // 		System.setProperty("phantomjs.binary.path", path.getAbsolutePath());
 // 		DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
 // 		desiredCapabilities.setJavascriptEnabled(true);
 // 		String [] phantomJsArgs = {"--ignore-ssl-errors=yes"};
 // 		desiredCapabilities.setCapability(PhantomJSDriverService.PHANTOMJS_GHOSTDRIVER_CLI_ARGS, phantomJsArgs);
-		driver = new PhantomJSDriver();
+// 		driver = new PhantomJSDriver(desiredCapabilities);
+		
+		DesiredCapabilities caps = new DesiredCapabilities();
+		caps.setJavascriptEnabled(true);                
+		caps.setCapability("takesScreenshot", true);
+		caps.setCapability(PhantomJSDriverService.PHANTOMJS_CLI_ARGS,"");
+		caps.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY,"/usr/local/bin/phantomjs");
+		driver = new  PhantomJSDriver(caps);
 		
 		
 // 		driver = new HtmlUnitDriver();
