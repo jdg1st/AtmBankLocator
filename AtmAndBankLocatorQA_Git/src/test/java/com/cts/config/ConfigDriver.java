@@ -11,6 +11,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriverService;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 
 public class ConfigDriver  {
 	
@@ -38,13 +39,13 @@ public class ConfigDriver  {
 // 		fo.addArguments("--headless");
 // 		driver = new FirefoxDriver(fo);
 
-		System.setProperty("phantomjs.binary.path", "/usr/local/bin/phantomjs");
-		DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
-		desiredCapabilities.setJavascriptEnabled(true);
-		String [] phantomJsArgs = {"--ignore-ssl-errors=yes"};
-		desiredCapabilities.setCapability(PhantomJSDriverService.PHANTOMJS_CLI_ARGS, phantomJsArgs);
-		driver = new PhantomJSDriver(desiredCapabilities);
-		
+// 		System.setProperty("phantomjs.binary.path", "/usr/local/bin/phantomjs");
+// 		DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
+// 		desiredCapabilities.setJavascriptEnabled(true);
+// 		String [] phantomJsArgs = {"--ignore-ssl-errors=yes"};
+// 		desiredCapabilities.setCapability(PhantomJSDriverService.PHANTOMJS_CLI_ARGS, phantomJsArgs);
+// 		driver = new PhantomJSDriver(desiredCapabilities);
+		driver = new HtmlUnitDriver();
 		return driver;
 	}
 
