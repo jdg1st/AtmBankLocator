@@ -62,17 +62,22 @@
 			<artifactId>testng</artifactId>
 			<version>6.10</version>
 		</dependency>
-		<dependency>
+<!-- 		<dependency>
 		    <groupId>org.seleniumhq.selenium</groupId>
 		    <artifactId>selenium-server</artifactId>
 		    <version>3.12.0</version>
+		</dependency> -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>3.5.3</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chrome-driver -->
-		<dependency>
+<!-- 		<dependency>
 		    <groupId>org.seleniumhq.selenium</groupId>
 		    <artifactId>selenium-chrome-driver</artifactId>
 		    <version>2.40.0</version>
-		</dependency>
+		</dependency> -->
 		<dependency>
 		   <groupId>org.json</groupId>
 		   <artifactId>json</artifactId>
@@ -85,11 +90,11 @@
 		    <version>1.2.1</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-htmlunit-driver -->
-		<dependency>
+<!-- 		<dependency>
 		    <groupId>org.seleniumhq.selenium</groupId>
 		    <artifactId>selenium-htmlunit-driver</artifactId>
 		    <version>2.52.0</version>
-		</dependency>
+		</dependency> -->
 	</dependencies>
   
   
