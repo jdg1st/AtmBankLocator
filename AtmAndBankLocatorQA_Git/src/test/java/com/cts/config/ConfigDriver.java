@@ -46,7 +46,7 @@ public class ConfigDriver  {
 		DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
 		desiredCapabilities.setJavascriptEnabled(true);
 		String [] phantomJsArgs = {"--ignore-ssl-errors=yes"};
-		desiredCapabilities.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY, phantomJsArgs);
+		desiredCapabilities.setCapability(PhantomJSDriverService.PHANTOMJS_GHOSTDRIVER_PATH_PROPERTY, phantomJsArgs);
 		driver = new PhantomJSDriver(desiredCapabilities);
 		
 		
