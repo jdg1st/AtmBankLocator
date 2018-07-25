@@ -28,8 +28,8 @@ public class ConfigDriver  {
         //final URL url = new URL("http://18.188.250.212:8080/AtmAndBranchLocator.war/");
         //driver = new RemoteWebDriver(url, desiredCap);
 
-		opt.addArguments("port=4444");
-		//opt.addArguments("--headless");
+		//opt.addArguments("port=4444");
+		opt.addArguments("--headless");
 //		DesiredCapabilities desired = new DesiredCapabilities();		
 //		desired.setCapability(ChromeOptions.CAPABILITY, opt);
 
